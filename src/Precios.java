@@ -1,7 +1,7 @@
 import java.util.List;
 
 public final class Precios {
-    public static final double MONTO_MINIMO_DESCUENTO = 1000;
+    public static final double MONTO_MINIMO_DESCUENTO = 2500;
 
     public static final double ITBIS = 0.18;
 
