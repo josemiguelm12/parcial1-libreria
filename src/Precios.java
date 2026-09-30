@@ -15,4 +15,6 @@ public final class Precios {
     public static double impuesto(double subtotal) {
         return Math.round(subtotal * ITBIS * 100.0) / 100.0;
     }
+
+    public static double descuento(double subtotal) { return subtotal >= MONTO_MINIMO_DESCUENTO ? Math.round(subtotal * 10) / 100.0 : 0; }
 }
