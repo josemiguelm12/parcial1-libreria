@@ -8,7 +8,7 @@ public final class Precios {
     private Precios() { }
 
     // Suma cantidad por precio unitario de cada línea.
-    public static double calcularSubtotal(List<Linea> lineas) {
+    public static double subtotal(List<Linea> lineas) {
         return lineas.stream().mapToDouble(l -> l.cantidad() * l.precioUnitario()).sum();
     }
 
