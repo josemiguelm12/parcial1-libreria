@@ -1,7 +1,7 @@
 import java.util.List;
 
 public final class Precios {
-    public static final double MONTO_MINIMO_DESCUENTO = 2500;
+    public static final double MONTO_MINIMO_DESCUENTO = 1200;
 
     public static final double ITBIS = 0.18;
 
@@ -16,5 +16,9 @@ public final class Precios {
         return Math.round(subtotal * ITBIS * 100.0) / 100.0;
     }
 
-    public static double descuento(double subtotal) { return subtotal >= MONTO_MINIMO_DESCUENTO ? Math.round(subtotal * 10) / 100.0 : 0; }
+    public static double descuento(double subtotal) {
+        return subtotal >= MONTO_MINIMO_DESCUENTO
+            ? Math.round(subtotal * 10) / 100.0
+            : 0;
+    }
 }
