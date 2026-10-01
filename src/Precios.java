@@ -18,7 +18,11 @@ public final class Precios {
 
     public static double descuento(double subtotal) {
         return subtotal >= MONTO_MINIMO_DESCUENTO
-            ? Math.round(subtotal * 10) / 100.0
-            : 0;
+                ? Math.round(subtotal * 10) / 100.0
+                : 0;
+    }
+
+    public static double cargoEnvio(double subtotal) {
+        return subtotal >= 3500 ? 0 : 200;
     }
 }
